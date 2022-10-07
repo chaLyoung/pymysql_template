@@ -87,9 +87,6 @@ def init():
                         slope_time_list.append(slope_time_data)
 
                 slope_time_insert_result = sql.insert_slope_time(slope_time_list)
-                print(slope_time_insert_result)
-
-
             else:
                 print('has same resort name')
         except Exception as e:

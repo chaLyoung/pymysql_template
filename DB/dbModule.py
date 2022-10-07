@@ -1,5 +1,23 @@
 # -*- coding: UTF-8 -*-
 import pymysql
+import json
+
+
+try:
+    try:
+        config_file = r"./dbInfo.json"
+        with open(config_file, 'rt', encoding='utf-8') as f:
+            config = json.load(f)
+    finally:
+        f.close()
+except Exception as e:
+    print(e)
+
+HOST = config["HOST"]
+PORT = config["PORT"]
+USER = config["USER"]
+PASSWORD = config["PASSWORD"]
+DATABASE = config["DATABASE"]
 
 
 class Database():
