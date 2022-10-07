@@ -3,5 +3,5 @@
     , "PORT": ""
     , "USER": ""
     , "PASSWORD": ""
-    , "DATABASE": ""
+    , "DATABASE": "",
 }

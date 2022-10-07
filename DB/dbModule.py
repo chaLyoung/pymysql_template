@@ -22,11 +22,11 @@ DATABASE = config["DATABASE"]
 
 class Database():
     def __init__(self):
-        self.db = pymysql.connect(host='shibaski.ckhkci0toeh4.ap-northeast-2.rds.amazonaws.com',
-                                  port=3306,
-                                  user='shibaski',
-                                  password='shibaskiepdlxjqpdltm12!',
-                                  database='shibaski',
+        self.db = pymysql.connect(host=HOST,
+                                  port=PORT,
+                                  user=USER,
+                                  password=PASSWORD,
+                                  database=DATABASE,
                                   charset='utf8')
         self.cursor = self.db.cursor(pymysql.cursors.DictCursor)
 
